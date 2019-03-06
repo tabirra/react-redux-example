@@ -1,0 +1,138 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+  list-style: none;
+}
+
+.restart_toggle {
+  width: 45%;
+}
+
+.move-list li {
+  width: 45%;
+}
+
+.move-list button {
+  width: 100%;
+}
+
+.currentMove {
+  color: blue;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.game-header {
+  text-align: center;
+  clear: both;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 3px solid #999;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.selSquare {
+  background: blue;
+  border: 3px solid #999;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kdb-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-board {
+  display: block;
+  margin-top: 20px;
+  margin-left: 35%;
+  width: auto;
+  float: left;
+}
+
+.game-info {
+  display: block;
+  width: 45%;
+  float: left;
+}
+
+/**
+ * Media query for responsive effect
+ */
+
+@media screen and (max-width: 800px) {
+
+  body {
+    font: 12px "Century Gothic", Futura, sans-serif;
+  }
+
+  ol,
+  ul {
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  .restart_toggle {
+    width: auto;
+  }
+
+  .move-list li {
+    width: auto;
+  }
+
+  .move-list button {
+    width: 100%;
+  }
+
+  .game-board {
+    display: block;
+    width: auto;
+    clear: both;
+    float: left;
+    margin-top: 0;
+    margin-left: 20%;
+  }
+
+  .game-info {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+  }
+}
